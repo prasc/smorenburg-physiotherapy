@@ -87,8 +87,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-container .menu-items {
@@ -107,25 +106,25 @@ nav {
   color: white;
 }
 
-.contact-button {
-  background: red;
+.navbar-container .menu-items .contact-button {
+  background: white;
   padding: 0.5rem 1rem;
   border-radius: 5%;
-  color: white;
-}
-
-.contact-button:hover {
   color: black;
 }
 
-a {
+.navbar-container .menu-items .contact-button:hover {
+  color: red;
+}
+
+.navbar-container a {
   font-weight: 500;
   font-size: 1.25rem;
   text-decoration: none;
   color: black;
 }
 
-a:hover {
+.navbar-container a:hover {
   color: red;
 }
 
@@ -352,70 +351,20 @@ header .header-image-container .middle {
   text-align: left;
   padding-left: 2rem;
   font-weight: normal;
-  width: 50%;
-}
-
-.billing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.billing .billing-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.billing .billing-text-container {
-  width: 60%;
-}
-
-.billing h2 {
-  font-size: 1.5rem;
-  text-align: left;
-}
-
-.billing div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80%;
 }
 
 #about h2 {
   margin-bottom: 2rem;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .about div:first-of-type {
-  width: 40%;
+  width: 100%;
   text-align: center;
 }
 
 .about div:last-of-type {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .about div:last-of-type p:first-of-type {
@@ -440,6 +389,8 @@ header .header-image-container .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 5rem;
 }
 
 .credentials div {
@@ -525,7 +476,7 @@ footer p {
 footer a {
   font-family: "Open Sans";
   font-size: 1.1rem;
-  color: red;
+  color: white;
 }
 
 footer img {
