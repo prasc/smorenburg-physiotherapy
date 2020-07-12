@@ -3,9 +3,12 @@ body {
   line-height: 1.7rem;
   font-size: 1.2rem;
   margin: 0 auto;
-  background-image: url("../assets/background-images/wood-background.jpg");
-  background-repeat: repeat;
+  background-image: url("../assets/background-images/dark-wood-background.jpg");
   background-size: contain;
+  /* <------ */
+  background-repeat: repeat;
+  background-position: center center;
+  color: white;
 }
 
 .wrapper {
@@ -84,9 +87,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0.8;
   padding-top: 10px;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-container .menu-items {

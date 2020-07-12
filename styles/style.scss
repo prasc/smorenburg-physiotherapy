@@ -9,9 +9,11 @@ body {
   line-height: 1.7rem;
   font-size: 1.2rem;
   margin: 0 auto;
-  background-image: url("../assets/background-images/wood-background.jpg");
-  background-repeat: repeat;
-  background-size: contain;
+  background-image: url("../assets/background-images/dark-wood-background.jpg");
+  background-size:     contain;                      /* <------ */
+  background-repeat:   repeat;
+  background-position: center center;
+  color: white;
 }
 
 .wrapper {
@@ -97,10 +99,9 @@ nav {
 .navbar-container {
   display: flex;
   justify-content: center;
-  opacity: 0.8;
   padding-top: 10px;
-  background: black;
-  .menu-items {
+  background: rgba(0, 0, 0, 0.7);
+    .menu-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
