@@ -93,13 +93,13 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .navbar-container {
   display: flex;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
   .menu-items {
     display: flex;
     justify-content: space-between;
@@ -184,70 +184,13 @@ nav {
 //----------------------------- Header
 
 header {
-  position: relative;
-  text-align: center;
-  height: 1vh;
-  z-index: 0;
-  .header-image-text {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    z-index: 10;
-    line-height: 5rem;
-    h2 {
-      font-size: 4rem;
-    }
-    p {
-      margin: 0;
-      padding: 0;
-      text-align: left;
-      font-size: 3rem;
-    }
-  }
   .header-image-container {
-    width: 100%;
-    position: relative;
-    opacity: 0.5;
-    img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      object-fit: cover;
-    }
-    .top {
-      animation-name: cf3FadeInOut;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-duration: 10s;
-      animation-direction: alternate;
-    }
-    .middle {
-      animation-name: cf3FadeInOut;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-duration: 15s;
-      animation-direction: alternate;
-    }
+    width: 85%;
+    margin: 0 auto;
+    opacity: 0.9;
   }
 }
 
-@keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 //----------------------------- Services
 
@@ -260,6 +203,7 @@ header {
   div {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 3rem;
     img {
       width: 110px;
@@ -288,6 +232,7 @@ header {
   div {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 1rem;
     img {
       width: 110px;
@@ -311,12 +256,15 @@ header {
 }
 
 .about {
+  display: flex;
+  justify-content: space-between;
+  
   div:first-of-type {
-    width: 100%;
+    width: 40%;
     text-align: center;
   }
   div:last-of-type {
-    max-width: 100%;
+    max-width: 50%;
     p:first-of-type {
       margin-top: 0;
       padding-top: 0;

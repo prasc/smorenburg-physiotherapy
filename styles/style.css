@@ -77,7 +77,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .navbar-container {
@@ -87,7 +87,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
 }
 
 .navbar-container .menu-items {
@@ -193,105 +193,10 @@ nav {
   }
 }
 
-header {
-  position: relative;
-  text-align: center;
-  z-index: 0;
-  height: 500px;
-}
-
-header .header-image-text {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  z-index: 10;
-  line-height: 5rem;
-}
-
-header .header-image-text h2 {
-  font-size: 4rem;
-}
-
-header .header-image-text p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font-size: 3rem;
-}
-
 header .header-image-container {
-  height: 500px;
-  width: 100%;
-  position: relative;
-  opacity: 0.5;
-}
-
-header .header-image-container img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 500px;
-}
-
-header .header-image-container .top {
-  -webkit-animation-name: cf3FadeInOut;
-          animation-name: cf3FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-header .header-image-container .middle {
-  -webkit-animation-name: cf3FadeInOut;
-          animation-name: cf3FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes cf3FadeInOut {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
 .services p {
@@ -307,6 +212,9 @@ header .header-image-container .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 3rem;
 }
 
@@ -339,6 +247,9 @@ header .header-image-container .middle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 1rem;
 }
 
@@ -358,13 +269,22 @@ header .header-image-container .middle {
   margin-bottom: 2rem;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about div:first-of-type {
-  width: 100%;
+  width: 40%;
   text-align: center;
 }
 
 .about div:last-of-type {
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .about div:last-of-type p:first-of-type {
