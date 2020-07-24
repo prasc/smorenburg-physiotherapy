@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", sans-serif;
   line-height: 1.7rem;
   font-size: 1.2rem;
   margin: 0 auto;
@@ -35,7 +35,7 @@ h2,
 h3,
 h4,
 a {
-  font-family: "PT Serif";
+  font-family: "Rubik";
   font-style: normal;
   font-size: 2rem;
   font-weight: normal;
@@ -88,6 +88,7 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   background: black;
+  height: 160px;
 }
 
 .navbar-container .menu-items {
@@ -782,58 +783,19 @@ footer img {
   }
 }
 
-/* pt-serif-regular - latin */
+/* rubik */
 @font-face {
-  font-family: "PT Serif";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-serif-v11-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif"), local("PTSerif-Regular"), url("../fonts/pt-serif-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v11-latin-regular.woff2") format("woff2"), url("../fonts/pt-serif-v11-latin-regular.woff") format("woff"), url("../fonts/pt-serif-v11-latin-regular.ttf") format("truetype"), url("../fonts/pt-serif-v11-latin-regular.svg#PTSerif") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/Rubik/Rubik-Regular.ttf");
 }
 
-/* pt-serif-700 - latin */
+/* karla */
 @font-face {
-  font-family: "PT Serif";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-serif-v11-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif Bold"), local("PTSerif-Bold"), url("../fonts/pt-serif-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v11-latin-700.woff2") format("woff2"), url("../fonts/pt-serif-v11-latin-700.woff") format("woff"), url("../fonts/pt-serif-v11-latin-700.ttf") format("truetype"), url("../fonts/pt-serif-v11-latin-700.svg#PTSerif") format("svg");
-  /* Legacy iOS */
-}
-
-/* open-sans-300 - latin */
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/open-sans-v17-latin-300.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-300.woff") format("woff"), url("../fonts/open-sans-v17-latin-300.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-300.svg#OpenSans") format("svg");
-  /* Legacy iOS */
-}
-
-/* open-sans-regular - latin */
-@font-face {
-  font-family: "Open Sans";
+  font-family: "Karla";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/open-sans-v17-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-regular.woff") format("woff"), url("../fonts/open-sans-v17-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
-  /* Legacy iOS */
-}
-
-/* open-sans-700 - latin */
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v17-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-700.woff") format("woff"), url("../fonts/open-sans-v17-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-700.svg#OpenSans") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/Karla/Karla-Regular.ttf");
 }
 /*# sourceMappingURL=style.css.map */
