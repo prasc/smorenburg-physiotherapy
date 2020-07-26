@@ -195,9 +195,13 @@ nav {
 }
 
 header .header-image-container {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   opacity: 0.9;
+}
+
+header .header-image-container img {
+  margin-bottom: -80px;
 }
 
 .services p {
@@ -220,7 +224,7 @@ header .header-image-container {
 }
 
 .services div img {
-  width: 110px;
+  width: 120px;
   height: 149px;
 }
 
@@ -255,7 +259,7 @@ header .header-image-container {
 }
 
 .del-services div img {
-  width: 110px;
+  width: 120px;
   height: 149px;
 }
 
