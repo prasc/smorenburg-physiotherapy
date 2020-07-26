@@ -418,6 +418,28 @@ footer img {
   color: black;
 }
 
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 40%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+  footer .iframe-google {
+    max-width: 80% !important;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 1115px) {
   .contact h2 {
     margin-bottom: 0.5rem;
