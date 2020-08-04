@@ -188,6 +188,7 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 25px;
+    margin-top: 100px;
   }
   nav .menu-items a {
     text-align: center;
@@ -355,6 +356,10 @@ header .header-image-container img {
   border: none;
 }
 
+.contact {
+  padding-bottom: 0 !important;
+}
+
 .contact h2 {
   margin-bottom: 2rem;
 }
@@ -438,7 +443,7 @@ footer img {
 
 .copyright {
   text-align: center;
-  padding: 10px 0;
+  padding: 2rem 0;
   background: rgba(46, 49, 49, 0.3);
 }
 
@@ -446,19 +451,19 @@ footer img {
   color: black;
 }
 
-.iframe-container {
+.map-responsive {
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-bottom: 20%;
   position: relative;
+  height: 0;
 }
 
-.iframe-container iframe {
-  border: 0;
-  height: 40%;
+.map-responsive iframe {
   left: 0;
-  position: absolute;
   top: 0;
+  height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -596,6 +601,12 @@ footer img {
   }
   footer div {
     width: 50%;
+  }
+  .navbar-container {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .logo-container {
+    display: none;
   }
   .stay-conntected {
     margin-left: auto;

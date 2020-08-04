@@ -176,6 +176,7 @@ nav {
     width: 100%;
     flex-direction: column;
     margin-bottom: $consistent-gap / 2;
+    margin-top: 100px;
     a {
       text-align: center;
       padding: 0.5rem 1rem;
@@ -332,6 +333,8 @@ header {
 //----------------------------- Contact
 
 .contact {
+  padding-bottom: 0 !important;
+
   h2 {
     margin-bottom: 2rem;
   }
@@ -402,28 +405,27 @@ footer {
 
 .copyright {
   text-align: center;
-  padding: 10px 0;
+  padding: 2rem 0;
   background: rgba(46, 49, 49, 0.3);
   p {
     color: black;
   }
 }
 
-.iframe-container {
+.map-responsive {
   overflow: hidden;
-  // 16:9 aspect ratio
-  padding-top: 56.25%;
+  padding-bottom: 20%;
   position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-.iframe-container iframe {
-  border: 0;
-  height: 40%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
 //----------------------------- Media queries
 
 @media only screen and (max-width: 1250px) {
@@ -554,6 +556,14 @@ footer {
     div {
       width: 50%;
     }
+  }
+
+  .navbar-container {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .logo-container {
+    display: none;
   }
 
   .stay-conntected {
