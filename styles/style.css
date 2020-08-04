@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Karla", sans-serif;
   line-height: 1.7rem;
@@ -19,6 +20,11 @@ body {
 
 img {
   max-width: 100%;
+}
+
+hr {
+  color: white;
+  opacity: 0.8;
 }
 
 body {
@@ -152,7 +158,7 @@ nav {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -201,7 +207,28 @@ header .header-image-container {
 }
 
 header .header-image-container img {
-  margin-bottom: -80px;
+  margin-bottom: -120px;
+}
+
+/* Glyph, by Harry Roberts */
+.style-eight {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double white;
+  color: #333;
+  text-align: center;
+}
+
+.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  color: red;
 }
 
 .services p {
@@ -271,7 +298,7 @@ header .header-image-container img {
 }
 
 #about h2 {
-  margin-bottom: 2rem;
+  margin-top: 50px;
 }
 
 .about {
@@ -281,6 +308,7 @@ header .header-image-container img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 50px;
 }
 
 .about div:first-of-type {
