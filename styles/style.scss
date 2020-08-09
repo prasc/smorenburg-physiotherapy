@@ -138,6 +138,10 @@ nav {
   margin-left: 50px;
 }
 
+.mobile-navbar-container {
+  height: 300px;
+}
+
 //----------------------------- Responsive Navbar
 
 .toggle-button {
@@ -176,7 +180,6 @@ nav {
     width: 100%;
     flex-direction: column;
     margin-bottom: $consistent-gap / 2;
-    margin-top: 100px;
     a {
       text-align: center;
       padding: 0.5rem 1rem;
@@ -556,10 +559,6 @@ footer {
     div {
       width: 50%;
     }
-  }
-
-  .navbar-container {
-    background: rgba(0, 0, 0, 0.6);
   }
 
   .logo-container {
