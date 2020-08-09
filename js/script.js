@@ -10,18 +10,29 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("menu-items")[0];
 const navBarContainer = document.querySelector(".navbar-container");
-console.log(navBarContainer);
 
 toggleButton.addEventListener("click", () => {
+  var w = window.innerWidth;
+
   navbarLinks.classList.toggle("active");
-  navBarContainer.classList.toggle("mobile-navbar-container");
+
+  if (w < 1000) {
+    console.log(w);
+    navBarContainer.classList.toggle("mobile-navbar-container");
+  }
 });
 
 const menuItems = Array.from(document.querySelectorAll(".menu-items a"));
 
 menuItems.forEach((item) =>
   item.addEventListener("click", () => {
+    var w = window.innerWidth;
+
     navbarLinks.classList.toggle("active");
-    navBarContainer.classList.toggle("mobile-navbar-container");
+
+    if (w < 1000) {
+      console.log(w);
+      navBarContainer.classList.toggle("mobile-navbar-container");
+    }
   })
 );
