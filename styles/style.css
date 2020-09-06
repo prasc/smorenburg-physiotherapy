@@ -204,6 +204,10 @@ nav {
   }
 }
 
+.toggleDisplay {
+  display: none !important;
+}
+
 header .header-image-container {
   width: 70%;
   margin: 0 auto;
@@ -591,6 +595,10 @@ footer img {
   }
 }
 
+.logo-container-two {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
   footer {
     display: -webkit-box;
@@ -607,6 +615,9 @@ footer img {
   }
   .logo-container {
     display: none;
+  }
+  .logo-container-two {
+    display: block;
   }
   .stay-conntected {
     margin-left: auto;

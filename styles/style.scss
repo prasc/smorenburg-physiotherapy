@@ -188,7 +188,12 @@ nav {
 
   .menu-items.active {
     display: flex !important;
+    // margin-top: -150px;
   }
+}
+
+.toggleDisplay {
+  display: none !important;
 }
 
 //----------------------------- Header
@@ -549,6 +554,10 @@ footer {
   }
 }
 
+.logo-container-two {
+  display: none;
+}
+
 @media only screen and (max-width: 1000px) {
   //----------------------------- Footer
 
@@ -563,6 +572,10 @@ footer {
 
   .logo-container {
     display: none;
+  }
+
+  .logo-container-two {
+    display: block;
   }
 
   .stay-conntected {

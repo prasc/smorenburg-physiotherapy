@@ -10,14 +10,17 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("menu-items")[0];
 const navBarContainer = document.querySelector(".navbar-container");
+const logoContainerTwo = document.querySelector(".logo-container-two");
 
 toggleButton.addEventListener("click", () => {
   var w = window.innerWidth;
 
   navbarLinks.classList.toggle("active");
 
+  console.log(logoContainerTwo.classList);
+
   if (w < 1000) {
-    console.log(w);
+    logoContainerTwo.classList.toggle("toggleDisplay");
     navBarContainer.classList.toggle("mobile-navbar-container");
   }
 });
@@ -31,7 +34,6 @@ menuItems.forEach((item) =>
     navbarLinks.classList.toggle("active");
 
     if (w < 1000) {
-      console.log(w);
       navBarContainer.classList.toggle("mobile-navbar-container");
     }
   })
