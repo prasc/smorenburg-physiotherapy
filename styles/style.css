@@ -204,10 +204,6 @@ nav {
   }
 }
 
-.toggleDisplay {
-  display: none !important;
-}
-
 header .header-image-container {
   width: 70%;
   margin: 0 auto;

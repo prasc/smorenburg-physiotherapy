@@ -17,11 +17,14 @@ toggleButton.addEventListener("click", () => {
 
   navbarLinks.classList.toggle("active");
 
-  console.log(logoContainerTwo.classList);
-
   if (w < 1000) {
-    logoContainerTwo.classList.toggle("toggleDisplay");
     navBarContainer.classList.toggle("mobile-navbar-container");
+  }
+
+  if (navBarContainer.classList.contains("mobile-navbar-container")) {
+    logoContainerTwo.style.display = "none";
+  } else {
+    logoContainerTwo.style.display = "block";
   }
 });
 
@@ -31,8 +34,11 @@ menuItems.forEach((item) =>
   item.addEventListener("click", () => {
     var w = window.innerWidth;
 
-    navbarLinks.classList.toggle("active");
+    if ((logoContainerTwo.style.display = "none")) {
+      logoContainerTwo.style.display = "block";
+    }
 
+    navbarLinks.classList.toggle("active");
     if (w < 1000) {
       navBarContainer.classList.toggle("mobile-navbar-container");
     }
