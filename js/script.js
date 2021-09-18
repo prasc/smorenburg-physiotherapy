@@ -32,15 +32,26 @@ const menuItems = Array.from(document.querySelectorAll(".menu-items a"));
 
 menuItems.forEach((item) =>
   item.addEventListener("click", () => {
-    var w = window.innerWidth;
-
-    if ((logoContainerTwo.style.display = "none")) {
-      logoContainerTwo.style.display = "block";
-    }
-
-    navbarLinks.classList.toggle("active");
     if (w < 1000) {
-      navBarContainer.classList.toggle("mobile-navbar-container");
+      var w = window.innerWidth;
+
+      if ((logoContainerTwo.style.display = "none")) {
+        logoContainerTwo.style.display = "block";
+      }
+  
+      navbarLinks.classList.toggle("active");
+      if (w < 1000) {
+        navBarContainer.classList.toggle("mobile-navbar-container");
+      }
     }
   })
 );
+
+
+window.addEventListener("resize", function () {
+  var w = window.innerWidth;
+  if (w > 1000) {
+    logoContainerTwo.style.display = "none"
+   } 
+
+})
